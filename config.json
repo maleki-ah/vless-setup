@@ -1,5 +1,7 @@
 {
-  "log": { "loglevel": "none" },
+  "log": {
+    "loglevel": "none"
+  },
   "inbounds": [
     {
       "port": 8080,
@@ -14,8 +16,11 @@
         "decryption": "none"
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "none"
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/vless"
+        }
       }
     }
   ],
